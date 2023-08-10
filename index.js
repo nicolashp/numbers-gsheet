@@ -6,11 +6,10 @@ app.get('/', (req, res) => {
   res.send('Bienvenue sur notre application de redirection !');
 });
 
-// URL de redirection - vous pouvez le configurer selon vos besoins
+// URL de redirection
 app.get('/redirect', (req, res) => {
   res.send('Vous avez été redirigé ici !');
 });
 
-// Notez que nous ne lançons pas le serveur ici. 
-// Nous exportons simplement l'application pour que Vercel puisse la gérer.
+// Exportez l'application pour Vercel
 module.exports = app;
